@@ -1,0 +1,1245 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: 0;
+    -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    font-style: normal;
+    font-family: 'Gaegu', cursive;
+    overflow: hidden;
+    background: #ea2c45;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.clearfix::after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 0;
+    clear: both;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.contents {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.background {
+    position: absolute;
+    width: 120vw;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.santa {
+    position: absolute;
+    right: -3%;
+    bottom: 0;
+    width: 50vmin;
+    height: 50vmin;
+    z-index: 2;
+}
+.santa > ul {
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.santa__hat {
+    top: 5%;
+    height: 30%;
+    z-index: 3;
+}
+
+.hat__pompon {
+    position: absolute;
+    right: 17%;
+    top: -5%;
+    width: 10%;
+    height: 33%;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 2;
+}
+.hat__crown {
+    position: relative;
+    top: 0;
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+    border-radius: 23vmin 23vmin 0 0;
+    background: #bc202e;
+    z-index: 1;
+}
+
+.hat__crown::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -9%;
+    right: 15%;
+    width: 60%;
+    height: 60%;
+    border-radius: 100vmin 80vmin 0 0;
+    background: #bc202e;
+    transform: rotate(-25deg) skew(50deg);
+    z-index: 1;
+}
+.hat__banding {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 40%;
+    border-radius: 3vmin;
+    background: #fff;
+    z-index: 2;
+}
+
+.santa__head {
+    height: 100%;
+    top: 0;
+    z-index: 2;
+}
+.head__hair {
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 54%;
+    height: 54%;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 2;
+}
+
+.head__face {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 48%;
+    height: 48%;
+    border-radius: 50%;
+    background: #fdd5bb;
+    z-index: 3;
+}
+.head__nose {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8%;
+    height: 6.5%;
+    border-radius: 50%;
+    background: #ffaba9;
+    z-index: 6;
+}
+
+.head__left-eye {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 4%;
+    height: 4%;
+    border-radius: 50%;
+    background: #231816;
+    z-index: 4;
+}
+.head__right-eye {
+    position: absolute;
+    top: 40%;
+    right: 40%;
+    width: 4%;
+    height: 4%;
+    border-radius: 50%;
+    background: #231816;
+    z-index: 4;
+}
+
+.head__left-ear {
+    position: absolute;
+    top: 40%;
+    left: 19%;
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    background: #fdd5bb;
+    z-index: 1;
+}
+
+.head__right-ear {
+    position: absolute;
+    top: 40%;
+    right: 19%;
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    background: #fdd5bb;
+    z-index: 1;
+}
+
+.head__left-cheek {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    background: #fac5b5;
+    z-index: 4;
+}
+
+.head__right-cheek {
+    position: absolute;
+    top: 45%;
+    right: 30%;
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    background: #fac5b5;
+    z-index: 4;
+}
+
+.head__mustache {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 5;
+}
+
+.mustache-wrap {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.mustache__top-left {
+    position: absolute;
+    top: -1%;
+    left: 5%;
+    width: 60%;
+    height: 60%;
+    background: #fff;
+    transform: rotate(0deg);
+    border-radius: 50%;
+}
+
+.mustache__top-right {
+    position: absolute;
+    top: -1%;
+    right: 5%;
+    width: 60%;
+    height: 60%;
+    background: #fff;
+    transform: rotate(0deg);
+    border-radius: 50%;
+}
+
+.mustache__left {
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    width: 60%;
+    height: 60%;
+    background: #fff;
+    transform: rotate(0deg) translateY(-50%);
+    border-radius: 50%;
+}
+
+.mustache__right {
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    width: 60%;
+    height: 60%;
+    background: #fff;
+    transform: rotate(0deg) translateY(-50%);
+    border-radius: 50%;
+}
+
+.mustache__bottom-left {
+    position: absolute;
+    bottom: 5%;
+    left: 0%;
+    width: 60%;
+    height: 60%;
+    background: #fff;
+    transform: rotate(0deg);
+    border-radius: 50%;
+}
+
+.mustache__bottom-right {
+    position: absolute;
+    bottom: 5%;
+    right: 0%;
+    width: 60%;
+    height: 60%;
+    background: #fff;
+    transform: rotate(0deg);
+    border-radius: 50%;
+}
+
+.santa__body {
+    bottom: 0;
+    height: 40%;
+    z-index: 1;
+}
+
+.body__clothes {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 100vmin 100vmin 0 0;
+    background: #bc202e;
+}
+
+.envelope {
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    border-radius: 5vmin;
+    background: #0e5206;
+    box-shadow: 0.5vmin 1vmin 2vmin 0 rgb(0 0 0 / 16%);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    border-radius: 5vmin;
+    background: #0e5206;
+    box-shadow: 0.5vmin 1vmin 2vmin 0 rgb(0 0 0 / 16%);
+}
+
+.cover .heart {
+    position: absolute;
+    bottom: -5vw;
+    left: 50%;
+    width: 5vw;
+    height: 5vw;
+    cursor: pointer;
+    animation: heartbeat 1.5s infinite;
+}
+.card {
+    position: relative;
+    top: 5%;
+    width: 100%;
+    height: 80%;
+    border-radius: 5vmin;
+    background: #90f383;
+    box-shadow: 0.5vmin 1vmin 2vmin 0 rgb(0 0 0 / 16%);
+    z-index: 0;
+}
+
+.card__title {
+    height: 7vw;
+    padding-top: 3vw;
+    text-align: center;
+}
+
+.card__title .merry,
+.card__title .christmas {
+    display: inline-block;
+}
+
+.card__title .merry {
+    margin-right: 1vw;
+}
+
+.card__title h2 {
+    position: relative;
+    width: 3vw;
+    height: 3vw;
+    margin: 0 1vw;
+    display: inline-block;
+}
+
+.heart {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: #d33938;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+.heart::before,
+.heart::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #d33938;
+    z-index: 1;
+}
+.heart::before {
+    top: 0;
+    left: -50%;
+}
+
+.heart::after {
+    top: -50%;
+    left: 0;
+}
+.title__text {
+    position: absolute;
+    top: -0.7vw;
+    left: 50%;
+    font-size: 3vw;
+    color: #fff;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.card__contents {
+    width: 100%;
+    height: calc(100% - 7vw);
+    padding: 2vw;
+}
+
+.letter-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.letter {
+    height: 100%;
+    padding: 2vw 2vw 8vw 2vw;
+    border: 2px dashed #d33938;
+    border-radius: 3vmin;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+.letter .dear {
+    font-size: 33px;
+    font-weight: bold;
+    margin-bottom: 2vw;
+}
+.letter p {
+    font-size: 25px;
+    margin-bottom: 2vw;
+}
+
+.letter .from {
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.snow-wrap {
+	position: absolute;
+	display: block;
+    width: 120%;
+    height: 300%;
+	margin: 0 auto;
+	transition: all 300ms linear; 
+}
+.snow-wrap.front {
+    top: -200%;
+    left: -10%;
+	animation: fallingSnow1 18s linear infinite;
+}
+
+.snow-wrap.back {
+    top: -195%;
+    left: -5%;
+    opacity: .7;
+	animation: fallingSnow2 20s linear infinite;
+}
+.snow {
+	position: absolute;
+	display: block;
+	left: 0;
+    width: 100%;
+    height: 33.333%;
+	margin: 0 auto;
+}
+
+.snow__top {
+    top: 0;
+}
+
+.snow__mid {
+    top: 33.333%;
+}
+
+.snow__bot {
+    top: 66.666%;
+}
+.snowflake {
+    position: absolute;
+	width: 0.6667vw;
+	height: 0.6667vw;
+    min-width: 6px;
+    min-height: 6px;
+	border-radius: 50%;
+	background-color: #fefefe;
+}
+
+.snow-wrap.back .snowflake {
+    width: 0.5vw;
+    height: 0.5vw;
+    min-width: 4px;
+    min-height: 4px;
+}
+
+.snowflake:nth-child(1) {
+    top: 4%;
+    left: 3%;
+}
+
+.snowflake:nth-child(2) {
+	top: 5%;
+	left: 11%;
+}
+
+.snowflake:nth-child(3) {
+	top: 6%;
+	left: 20%;
+}
+
+.snowflake:nth-child(4) {
+	top: 7%;
+	left: 30%;
+}
+
+.snowflake:nth-child(5) {
+	top: 4%;
+	left: 40%;
+}
+
+.snowflake:nth-child(6) {
+	top: 8%;
+	left: 51%;
+}
+
+.snowflake:nth-child(7) {
+	top: 6%;
+	left: 60%;
+}
+
+.snowflake:nth-child(8) {
+	top: 2%;
+	left: 69%;
+}
+
+.snowflake:nth-child(9) {
+	top: 4%;
+	left: 78%;
+}
+
+.snowflake:nth-child(10) {
+	top: 11%;
+	left: 89%;
+}
+
+.snowflake:nth-child(11) {
+	top: 7%;
+	left: 97%;
+}
+
+.snowflake:nth-child(12) {
+	top: 22%;
+	left: 2%;
+}
+
+.snowflake:nth-child(13) {
+	top: 20%;
+	left: 10%;
+}
+
+.snowflake:nth-child(14) {
+	top: 15%;
+	left: 22%;
+}
+
+.snowflake:nth-child(15) {
+	top: 17%;
+	left: 27%;
+}
+
+.snowflake:nth-child(16) {
+	top: 20%;
+	left: 35%;
+}
+
+.snowflake:nth-child(17) {
+	top: 13%;
+	left: 44%;
+}
+
+.snowflake:nth-child(18) {
+	top: 17%;
+	left: 50%;
+}
+
+.snowflake:nth-child(19) {
+	top: 24%;
+	left: 54%;
+}
+
+.snowflake:nth-child(20) {
+	top: 18%;
+	left: 62%;
+}
+
+.snowflake:nth-child(21) {
+	top: 21%;
+	left: 69%;
+}
+
+.snowflake:nth-child(22) {
+	top: 13%;
+	left: 77%;
+}
+
+.snowflake:nth-child(23) {
+	top: 16%;
+	left: 85%;
+}
+
+.snowflake:nth-child(24) {
+	top: 21%;
+	left: 90%;
+}
+
+.snowflake:nth-child(25) {
+	top: 14%;
+	left: 95%;
+}
+
+.snowflake:nth-child(26) {
+	top: 30%;
+	left: 9%;
+}
+
+.snowflake:nth-child(27) {
+	top: 32%;
+	left: 19%;
+}
+
+.snowflake:nth-child(28) {
+	top: 26%;
+	left: 29%;
+}
+
+.snowflake:nth-child(29) {
+	top: 23%;
+	left: 35%;
+}
+
+.snowflake:nth-child(30) {
+	top: 31%;
+	left: 38%;
+}
+
+.snowflake:nth-child(31) {
+	top: 27%;
+	left: 45%;
+}
+
+.snowflake:nth-child(32) {
+	top: 32%;
+	left: 55%;
+}
+
+.snowflake:nth-child(33) {
+	top: 23%;
+	left: 67%;
+}
+
+.snowflake:nth-child(34) {
+	top: 27%;
+	left: 79%;
+}
+
+.snowflake:nth-child(35) {
+	top: 31%;
+	left: 87%;
+}
+
+.snowflake:nth-child(36) {
+	top: 26%;
+	left: 98%;
+}
+
+.snowflake:nth-child(37) {
+	top: 40%;
+	left: 2%;
+}
+
+.snowflake:nth-child(38) {
+	top: 42%;
+	left: 10%;
+}
+
+.snowflake:nth-child(39) {
+	top: 46%;
+	left: 19%;
+}
+
+.snowflake:nth-child(40) {
+	top: 42%;
+	left: 26%;
+}
+
+.snowflake:nth-child(41) {
+	top: 38%;
+	left: 35%;
+}
+
+.snowflake:nth-child(42) {
+	top: 42%;
+	left: 40%;
+}
+
+.snowflake:nth-child(43) {
+	top: 38%;
+	left: 50%;
+}
+
+.snowflake:nth-child(44) {
+	top: 44%;
+	left: 56%;
+}
+
+.snowflake:nth-child(45) {
+	top: 43%;
+	left: 68%;
+}
+
+.snowflake:nth-child(46) {
+	top: 40%;
+	left: 81%;
+}
+
+.snowflake:nth-child(47) {
+	top: 46%;
+	left: 88%;
+}
+
+.snowflake:nth-child(48) {
+	top: 41%;
+	left: 97%;
+}
+
+.snowflake:nth-child(49) {
+	top: 52%;
+	left: 5%;
+}
+
+.snowflake:nth-child(50) {
+	top: 54%;
+	left: 15%;
+}
+
+.snowflake:nth-child(51) {
+	top: 48%;
+	left: 22%;
+}
+
+.snowflake:nth-child(52) {
+	top: 52%;
+	left: 34%;
+}
+
+.snowflake:nth-child(53) {
+	top: 55%;
+	left: 41%;
+}
+
+.snowflake:nth-child(54) {
+	top: 54%;
+	left: 52%;
+}
+
+.snowflake:nth-child(55) {
+	top: 50%;
+	left: 64%;
+}
+
+.snowflake:nth-child(56) {
+	top: 53%;
+	left: 70%;
+}
+
+.snowflake:nth-child(57) {
+	top: 56%;
+	left: 80%;
+}
+
+.snowflake:nth-child(58) {
+	top: 48%;
+	left: 85%;
+}
+
+.snowflake:nth-child(59) {
+	top: 54%;
+	left: 90%;
+}
+
+.snowflake:nth-child(60) {
+	top: 51%;
+	left: 95%;
+}
+
+.snowflake:nth-child(61) {
+	top: 62%;
+	left: 5%;
+}
+
+.snowflake:nth-child(62) {
+	top: 65%;
+	left: 14%;
+}
+
+.snowflake:nth-child(63) {
+	top: 66%;
+	left: 24%;
+}
+
+.snowflake:nth-child(64) {
+	top: 68%;
+	left: 34%;
+}
+
+.snowflake:nth-child(65) {
+	top: 60%;
+	left: 45%;
+}
+
+.snowflake:nth-child(66) {
+	top: 64%;
+	left: 55%;
+}
+
+.snowflake:nth-child(67) {
+	top: 58%;
+	left: 65%;
+}
+
+.snowflake:nth-child(68) {
+	top: 66%;
+	left: 69%;
+}
+
+.snowflake:nth-child(69) {
+	top: 63%;
+	left: 77%;
+}
+
+.snowflake:nth-child(70) {
+	top: 60%;
+	left: 89%;
+}
+
+.snowflake:nth-child(71) {
+	top: 64%;
+	left: 94%;
+}
+
+.snowflake:nth-child(72) {
+	top: 68%;
+	left: 99%;
+}
+
+.snowflake:nth-child(73) {
+	top: 77%;
+	left: 4%;
+}
+
+.snowflake:nth-child(74) {
+	top: 75%;
+	left: 11%;
+}
+
+.snowflake:nth-child(75) {
+	top: 77%;
+	left: 22%;
+}
+
+.snowflake:nth-child(76) {
+	top: 73%;
+	left: 31%;
+}
+
+.snowflake:nth-child(77) {
+	top: 71%;
+	left: 40%;
+}
+
+.snowflake:nth-child(78) {
+	top: 78%;
+	left: 50%;
+}
+
+.snowflake:nth-child(79) {
+	top: 76%;
+	left: 59%;
+}
+
+.snowflake:nth-child(80) {
+	top: 77%;
+	left: 69%;
+}
+
+.snowflake:nth-child(81) {
+	top: 71%;
+	left: 75%;
+}
+
+.snowflake:nth-child(82) {
+	top: 80%;
+	left: 82%;
+}
+
+.snowflake:nth-child(83) {
+	top: 78%;
+	left: 90%;
+}
+
+.snowflake:nth-child(84) {
+	top: 77%;
+	left: 95%;
+}
+
+.snowflake:nth-child(85) {
+	top: 86%;
+	left: 1%;
+}
+
+.snowflake:nth-child(86) {
+	top: 88%;
+	left: 9%;
+}
+
+.snowflake:nth-child(87) {
+	top: 84%;
+	left: 19%;
+}
+
+.snowflake:nth-child(88) {
+	top: 91%;
+	left: 29%;
+}
+
+.snowflake:nth-child(89) {
+	top: 85%;
+	left: 39%;
+}
+
+.snowflake:nth-child(90) {
+	top: 86%;
+	left: 50%;
+}
+
+.snowflake:nth-child(91) {
+	top: 82%;
+	left: 62%;
+}
+
+.snowflake:nth-child(92) {
+	top: 85%;
+	left: 70%;
+}
+
+.snowflake:nth-child(93) {
+	top: 90%;
+	left: 80%;
+}
+
+.snowflake:nth-child(94) {
+	top: 91%;
+	left: 85%;
+}
+
+.snowflake:nth-child(95) {
+	top: 87%;
+	left: 90%;
+}
+
+.snowflake:nth-child(96) {
+	top: 88%;
+	left: 99%;
+}
+
+.snowflake:nth-child(97) {
+	top: 93%;
+	left: 4%;
+}
+
+.snowflake:nth-child(98) {
+	top: 95%;
+	left: 12%;
+}
+
+.snowflake:nth-child(99) {
+	top: 93%;
+	left: 20%;
+}
+
+.snowflake:nth-child(100) {
+	top: 94%;
+	left: 28%;
+}
+
+.snowflake:nth-child(101) {
+	top: 97%;
+	left: 39%;
+}
+
+.snowflake:nth-child(102) {
+	top: 91%;
+	left: 45%;
+}
+
+.snowflake:nth-child(103) {
+	top: 94%;
+	left: 55%;
+}
+
+.snowflake:nth-child(104) {
+	top: 96%;
+	left: 64%;
+}
+
+.snowflake:nth-child(105) {
+	top: 91%;
+	left: 73%;
+}
+
+.snowflake:nth-child(106) {
+	top: 97%;
+	left: 83%;
+}
+
+.snowflake:nth-child(107) {
+	top: 95%;
+	left: 89%;
+}
+
+.snowflake:nth-child(108) {
+	top: 96%;
+	left: 97%;
+}
+
+@keyframes fallingSnow1 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(-20px, 8.33333333333333%);
+    }
+
+    50% {
+        transform: translate(-40px, 16.6666666666666%);
+    }
+
+    75% {
+        transform: translate(-20px, 24.99999999999999%);
+    }
+
+    100% {
+        transform: translate(0, 33.333333333333%);
+    }
+}
+
+@keyframes fallingSnow2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(15px, 8.33333333333333%);
+    }
+
+    50% {
+        transform: translate(30px, 16.6666666666666%);
+    }
+
+    75% {
+        transform: translate(15px, 24.99999999999999%);
+    }
+
+    100% {
+        transform: translate(0, 33.333333333333%);
+    }
+}
+
+@keyframes heartbeat {
+  0%,
+  40%,
+  80%,
+  100% {
+    transform: scale(1) translateY(-50%) rotate(45deg);
+  }
+  20%,
+  60% {
+    transform: scale(1.2) translateY(-35%) rotate(45deg);
+  }
+}
+@media all and (max-width: 1366px) {
+    .contents {
+        width: 95%;
+    }
+    .envelope,
+    .card {
+        height: 85%;
+    }
+/*     .letter {
+        padding: 2vw 2vw 20vw 2vw;
+    } */
+    .letter .dear,
+    .letter .from {
+        font-size: 27px;
+    }
+    .letter p {
+        font-size: 22px;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .card__contents {
+        padding: 20px;
+    }
+    .letter {
+        padding: 20px 20px 200px 20px;
+    }
+    .letter .dear {
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+    .letter p {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .letter p:last-of-type {
+        margin-bottom: 20px;
+    }
+    .letter .from {
+        font-size: 23px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .cover .heart {
+        bottom: -25px;
+        width: 25px;
+        height: 25px;
+    }
+    .card__title {
+        padding-top: 30px;
+        height: 100px;
+    }
+    .card__title .merry,
+    .card__title .christmas {
+        display: block;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .card__title h2 {
+        position: relative;
+        width: 25px;
+        height: 25px;
+        margin: 0 7px;
+        display: inline-block;
+    }
+    .title__text {
+        top: -7px;
+        font-size: 25px;
+    }
+    .card__contents {
+        height: calc(100% - 100px);
+    }
+    .letter {
+        padding: 15px 15px 200px 15px;
+    }
+}
+
+@media all and (max-width: 640px) {
+    .letter {
+        padding: 15px 15px 170px 15px;
+    }
+}
+
+@media all and (max-width: 540px) {
+    .letter {
+        padding: 15px 15px 20vw 15px;
+    }
+}
+
+@media all and (max-width: 768px) and (orientation: landscape) {
+    .card__title {
+        height: 60px;
+    }
+    .card__title .merry,
+    .card__title .christmas {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    .card__title .merry {
+        margin-right: 10px;
+    }
+    .card__contents {
+        height: calc(100% - 60px);
+    }
+    .letter {
+        padding: 15px 15px 20vh 15px;
+    }
+
+}
+
